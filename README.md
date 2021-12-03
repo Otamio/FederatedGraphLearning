@@ -13,8 +13,10 @@ The are multiple **loss functions** that can be used, for example:
 3. **Logistic Loss**
 
 There are also multiple **scoring functions** that can be used, with many of them borrow the ideas from NLP, including:
-4. <img src="https://render.githubusercontent.com/render/math?math=min (s + r - o)"> **TransE**
-5. <img src="https://render.githubusercontent.com/render/math?math=max <s,r,o>"> **DistMult**
+
+4. <img src="https://render.githubusercontent.com/render/math?math=min (s \plus r - o)"> **TransE**
+5. 
+6. <img src="https://render.githubusercontent.com/render/math?math=max <s,r,o>"> **DistMult**
 and so on.
 
 In this project, we will be using **TransE** with **Margin Ranking Loss**. We will also implement a negative sampler that will be used to differentiate positives from negatives.
