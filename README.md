@@ -8,13 +8,13 @@ A graph with a set of multiple relations <img src="https://render.githubusercont
 **Reconstruction** can be defined in the following terms: Given the loss function <img src="https://render.githubusercontent.com/render/math?math=L">, and a scoring function <img src="https://render.githubusercontent.com/render/math?math=f">, the task of the graph representation is to minimize <img src="https://render.githubusercontent.com/render/math?math=L=f(s,r,o)"> where <img src="https://render.githubusercontent.com/render/math?math=\{(s,r,o)\} \in G">, and maximize where <img src="https://render.githubusercontent.com/render/math?math=\{(s,r,o)\} \notin G">. 
 
 The are multiple **loss functions** that can be used, for example:
-1. **Margin Ranking Loss**: $L = max(0, -y (x_2 - x_1 ) + \gamma)$
+1. **Margin Ranking Loss**: <img src="https://render.githubusercontent.com/render/math?math=L = max(0, -y (x_2 - x_1 ) + \gamma)">
 2. **Binary Cross Entropy Loss**
 3. **Logistic Loss**
 
 There are also multiple **scoring functions** that can be used, with many of them borrow the ideas from NLP, including:
-4. $min (s + r - o)$ **TransE**
-5. $max <s,r,o>$ **DistMult**
+4. <img src="https://render.githubusercontent.com/render/math?math=min (s + r - o)"> **TransE**
+5. <img src="https://render.githubusercontent.com/render/math?math=max <s,r,o>"> **DistMult**
 and so on.
 
 In this project, we will be using **TransE** with **Margin Ranking Loss**. We will also implement a negative sampler that will be used to differentiate positives from negatives.
@@ -24,9 +24,9 @@ The project contain the following pieces:
 ### Dataset
 The dataset to be used is the **countries** dataset.
 ### ID-Mapping table
-For each entity $e \in E$ and $r \in R$, we will be giving it an index to make it easy to lookup for the embedding in the dictionary.
+For each entity <img src="https://render.githubusercontent.com/render/math?math=e \in E"> and <img src="https://render.githubusercontent.com/render/math?math=r \in R">, we will be giving it an index to make it easy to lookup for the embedding in the dictionary.
 ### Negative Sampler
-For each triple $\{s,r,o\}$ in the dataset. We will be corrupting the triple by either replace the head $s$ or object $o$ to treat it as a negative sample. Note that a corrupted triple may still be a positive in the original graph.
+For each triple <img src="https://render.githubusercontent.com/render/math?math=\{s,r,o\}"> in the dataset. We will be corrupting the triple by either replace the head <img src="https://render.githubusercontent.com/render/math?math=s"> or object <img src="https://render.githubusercontent.com/render/math?math=o"> to treat it as a negative sample. Note that a corrupted triple may still be a positive in the original graph.
 
 ## Distributed Graph Learning
 ### General Idea
