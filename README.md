@@ -8,13 +8,13 @@ A graph with a set of multiple relations <img src="https://render.githubusercont
 **Reconstruction** can be defined in the following terms: Given the loss function <img src="https://render.githubusercontent.com/render/math?math=L">, and a scoring function <img src="https://render.githubusercontent.com/render/math?math=f">, the task of the graph representation is to minimize <img src="https://render.githubusercontent.com/render/math?math=L=f(s,r,o)"> where <img src="https://render.githubusercontent.com/render/math?math=\{(s,r,o)\} \in G">, and maximize where <img src="https://render.githubusercontent.com/render/math?math=\{(s,r,o)\} \notin G">. 
 
 The are multiple **loss functions** that can be used, for example:
-1. **Margin Ranking Loss**: <img src="https://render.githubusercontent.com/render/math?math=L = max(0, -y (x_2 - x_1 ) + \gamma)">
+1. **Margin Ranking Loss**: <img src="https://render.githubusercontent.com/render/math?math=L = max(0, -y (x_2 - x_1 ) + (\gamma))">
 2. **Binary Cross Entropy Loss**
 3. **Logistic Loss**
 
 There are also multiple **scoring functions** that can be used, with many of them borrow the ideas from NLP, including:
 
-4. <img src="https://render.githubusercontent.com/render/math?math=min (s + r - o)"> **TransE**
+4. <img src="https://render.githubusercontent.com/render/math?math=min (s + (r) - o)"> **TransE**
 
 5. <img src="https://render.githubusercontent.com/render/math?math=max <s,r,o>"> **DistMult**
 and so on.
