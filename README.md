@@ -3,9 +3,9 @@
 A graph with a set of multiple relations <img src="https://render.githubusercontent.com/render/math?math=R"> can be defined as <img src="https://render.githubusercontent.com/render/math?math=G = (E, R) = \{(s,r,o)\}"> where <img src="https://render.githubusercontent.com/render/math?math=s,o \in E"> and <img src="https://render.githubusercontent.com/render/math?math=r \in R">. 
 
 
-**Graph Machine Learning** is to generate low-dimension representations $s,o,r \in R^d$ that can be used to reconstruct the graph as closely as possible. 
+**Graph Machine Learning** is to generate low-dimension representations <img src="https://render.githubusercontent.com/render/math?math=s,o,r \in R^d"> that can be used to reconstruct the graph as closely as possible. 
 
-**Reconstruction** can be defined in the following terms: Given the loss function $L$, and a scoring function $f$, the task of the graph representation is to minimize $L=f(s,r,o)$ where $\{(s,r,o)\} \in G$, and maximize where $\{(s,r,o)\} \notin G$. 
+**Reconstruction** can be defined in the following terms: Given the loss function <img src="https://render.githubusercontent.com/render/math?math=L">, and a scoring function <img src="https://render.githubusercontent.com/render/math?math=f">, the task of the graph representation is to minimize <img src="https://render.githubusercontent.com/render/math?math=L=f(s,r,o)"> where <img src="https://render.githubusercontent.com/render/math?math=\{(s,r,o)\} \in G">, and maximize where <img src="https://render.githubusercontent.com/render/math?math=\{(s,r,o)\} \notin G">. 
 
 The are multiple **loss functions** that can be used, for example:
 1. **Margin Ranking Loss**: $L = max(0, -y (x_2 - x_1 ) + \gamma)$
