@@ -1,6 +1,6 @@
 # Federated Graph Learning
 ## Introduction
-A graph with a set of multiple relations <img src="https://render.githubusercontent.com/render/math?math=R"> can be defined as $$G = (E, R) = \{(s,r,o)\}$$ where $s,o \in E$ and $r \in R$. 
+A graph with a set of multiple relations <img src="https://render.githubusercontent.com/render/math?math=R"> can be defined as <img src="https://render.githubusercontent.com/render/math?math=G = (E, R) = \{(s,r,o)\}"> where <img src="https://render.githubusercontent.com/render/math?math=s,o \in E"> and <img src="https://render.githubusercontent.com/render/math?math=r \in R">. 
 
 
 **Graph Machine Learning** is to generate low-dimension representations $s,o,r \in R^d$ that can be used to reconstruct the graph as closely as possible. 
