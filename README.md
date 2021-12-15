@@ -41,3 +41,8 @@ The difference between federated graph learning and distributed learning is that
 ### Detailed Setup
 The implementation is described below:
 ![enter image description here](https://github.com/Otamio/FederatedGraphLearning/blob/main/rsc/2.PNG)
+
+### Results (Hits@10)
+| Vanilla | Distributed | Federated |
+| --- | ----------- | ----------- |
+| 0.757 | 0.600 | 0.752 |

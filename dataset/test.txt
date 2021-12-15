@@ -1,3 +1,4 @@
+head	relation	tail
 poland	ngoorgs3	ussr
 india	intergovorgs	israel
 israel	commonbloc1	cuba

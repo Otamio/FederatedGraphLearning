@@ -1,3 +1,4 @@
+head	relation	tail
 cuba	timesinceally	india
 brazil	reltreaties	egypt
 egypt	exports3	uk
